@@ -1,0 +1,27 @@
+DATA:
+  DATASET: DARN
+  NUM_ATTRIBUTES: 9
+  ATTRIBUTES:
+    NAME:
+      - clothes category
+      - clothes button
+      - clothes color
+      - clothes length
+      - clothes pattern
+      - clothes shape
+      - collar shape
+      - sleeve length
+      - sleeve shape
+    NUM: [20, 13, 55, 7, 28, 11, 26, 8, 17]
+  PATH_FILE:
+    TRAIN: filenames_train.txt
+    VALID: filenames_valid.txt
+    TEST: filenames_test.txt
+  GROUNDTRUTH:
+    TRAIN: label_train.txt
+    QUERY:
+      VALID: query_valid.txt
+      TEST: query_test.txt
+    CANDIDATE:
+      VALID: candidate_valid.txt
+      TEST: candidate_test.txt

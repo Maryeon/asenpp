@@ -1,0 +1,26 @@
+DATA:
+  DATASET: FashionAI
+  NUM_ATTRIBUTES: 8
+  ATTRIBUTES:
+    NAME:
+      - skirt_length
+      - sleeve_length
+      - coat_length
+      - pant_length
+      - collar_design
+      - lapel_design
+      - neckline_design
+      - neck_design
+    NUM: [6, 9, 8, 6, 5, 5, 10, 5]
+  PATH_FILE:
+    TRAIN: filenames_train.txt
+    VALID: filenames_valid.txt
+    TEST: filenames_test.txt
+  GROUNDTRUTH:
+    TRAIN: label_train.txt
+    QUERY:
+      VALID: query_valid.txt
+      TEST: query_test.txt
+    CANDIDATE:
+      VALID: candidate_valid.txt
+      TEST: candidate_test.txt
