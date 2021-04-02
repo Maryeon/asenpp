@@ -1,5 +1,4 @@
 from torchvision import transforms
-import matplotlib.cm as cm
 import numpy as np
 import cv2
 
