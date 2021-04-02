@@ -8,19 +8,22 @@ This repository is a [PyTorch](https://pytorch.org/) implementation for the pape
 
 ## Table of Contents
 
-- [Environments](#environments)
-- [Datasets](#datasets)
-     - [Data Split](#data-split)
-     - [Layout](#layout)
-     - [Download Data](#download-data)
-          - [FashionAI](#fashionai)
-          - [DARN](#darn)
-          - [DeepFashion](DeepFashion)
-   - [Configuration](#configuration)
+* [Environments](#environments)
 
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [References](#references)
+- [Datasets](#datasets)
+  - [Data Split](#data-split)
+  - [Layout](#layout)
+  - [Download Data](#download-data)
+    - [FashionAI](#fashionai)
+    - [DARN](#darn)
+    - [DeepFashion](DeepFashion)
+- [Configuration](#configuration)
+
+* [Training](#training)
+
+* [Evaluation](#evaluation)
+
+* [References](#references)
 
 ## Environments
 
