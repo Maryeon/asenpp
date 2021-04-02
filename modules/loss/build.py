@@ -10,7 +10,7 @@ class TripletRankingLoss(nn.Module):
 	def __init__(self, cfg):
 		super(TripletRankingLoss, self).__init__()
 		self.margin = cfg.SOLVER.MARGIN
-		self.device = torch.device(cfg.MODEL.DEVICE)
+		self.device = torch.device(cfg.DEVICE)
 		self.criterion = nn.MarginRankingLoss(margin=self.margin)
 
 	def forward(self, ref, pos, neg):
