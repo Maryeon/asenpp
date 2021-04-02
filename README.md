@@ -91,10 +91,10 @@ The behavior of our codes is controlled by configuration files under the `config
 
 ```sh
 config
-|── FashionAI
-|   ├── FashionAI.yaml
-|   ├── s1.yaml
-|   └── s2.yaml
+│── FashionAI
+│   ├── FashionAI.yaml
+│   ├── s1.yaml
+│   └── s2.yaml
 ├── DARN
 │   ├── DARN.yaml
 │   ├── s1.yaml
