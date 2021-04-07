@@ -1,6 +1,6 @@
 # Fine-Grained Fashion Similarity Prediction by Attribute-Specific Embedding Learning (ASEN++)
 
-This repository is a [PyTorch](https://pytorch.org/) implementation for the paper **Fine-Grained Fashion Similarity Prediction by Attribute-Specific Embedding Learning**. This work extends our [previous work](https://ojs.aaai.org/index.php/AAAI/article/view/6845/6699) at AAAI 2020.
+This repository is a [PyTorch](https://pytorch.org/) implementation for the paper [Fine-Grained Fashion Similarity Prediction by Attribute-Specific Embedding Learning](https://arxiv.org/abs/2104.02429). This work extends our [previous work](https://ojs.aaai.org/index.php/AAAI/article/view/6845/6699) at AAAI 2020.
 
 ![network structure](imgs/framework.png)
 
