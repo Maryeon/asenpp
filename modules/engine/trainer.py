@@ -49,7 +49,7 @@ def do_train(cfg, model, data_loader, gt, lt, optimizer, criterion, device, logg
 			ln, _ = model(ln, a, level='local')
 
 			# local losses
-			l = local_loss(criterion, gx, gp, gn, lx, lp, ln, cfg.SOLVER.MARGIN)
+			l = local_loss(criterion, gx, gp, gn, lx, lp, ln)
 			llosses.update(cfg.SOLVER.LOCAL_WEIGHT * l[0].cpu().item(), n_data)
 			alosses.update(cfg.SOLVER.ALIGN_WEIGHT * l[1].cpu().item(), n_data)
 			loss += cfg.SOLVER.LOCAL_WEIGHT * l[0] + cfg.SOLVER.ALIGN_WEIGHT * l[1]
@@ -76,13 +76,13 @@ def do_train(cfg, model, data_loader, gt, lt, optimizer, criterion, device, logg
 
 
 
-def local_loss(criterion, gx, gp, gn, lx, lp, ln, m):
+def local_loss(criterion, gx, gp, gn, lx, lp, ln):
 	lt_loss = criterion(lx, lp, ln)
 	sim_x_ins = nn.functional.cosine_similarity(gx, lx, dim=1)
 	sim_p_ins = nn.functional.cosine_similarity(gp, lp, dim=1)
 	sim_n_ins = nn.functional.cosine_similarity(gn, ln, dim=1)
-	a_loss = torch.mean(torch.clamp(m-sim_x_ins, min=0)) + \
-			 torch.mean(torch.clamp(m-sim_p_ins, min=0)) + \
-			 torch.mean(torch.clamp(m-sim_n_ins, min=0))
+	a_loss = torch.mean(torch.clamp(1.-sim_x_ins, min=0)) + \
+			 torch.mean(torch.clamp(1.-sim_p_ins, min=0)) + \
+			 torch.mean(torch.clamp(1.-sim_n_ins, min=0))
 
 	return lt_loss, a_loss
