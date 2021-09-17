@@ -137,9 +137,10 @@ For your convenience, we also provide our trained model weights ([pretrained_ase
 If it's of any help to your research, consider citing our work:
 
 ```latex
-@inproceedings{dong2021fine,
+@artical{dong2021fine,
   title={Fine-Grained Fashion Similarity Prediction by Attribute-Specific Embedding Learning},
   author={Dong, Jianfeng and Ma, Zhe and Mao, Xiaofeng and Yang, Xun and He, Yuan and Hong, Richang and Ji, Shouling},
+  journal={IEEE Transactions on Image Processing},
   year = {2021}
 }
 ```
