@@ -141,6 +141,8 @@ If it's of any help to your research, consider citing our work:
   title={Fine-Grained Fashion Similarity Prediction by Attribute-Specific Embedding Learning},
   author={Dong, Jianfeng and Ma, Zhe and Mao, Xiaofeng and Yang, Xun and He, Yuan and Hong, Richang and Ji, Shouling},
   journal={IEEE Transactions on Image Processing},
+  volume={30},
+  pages={8410--8425},
   year = {2021}
 }
 ```
